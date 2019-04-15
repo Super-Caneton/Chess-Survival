@@ -1,7 +1,7 @@
 var chartWhere,
     chartWhereOptions = {};
 
-
+try{
 chartWhereOptions.chartP = {
     chart: {
         type: 'heatmap'
@@ -50,6 +50,10 @@ chartWhereOptions.chartP = {
         csvURL: 'https://raw.githubusercontent.com/Super-Caneton/Chess-Survival/master/data/whereP.csv'
     }
 };
+}
+catch(err){
+alert(err.message);
+}
 
 chartWhereOptions.chartR = {
     chart: {
