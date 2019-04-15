@@ -9,6 +9,8 @@ $(function () {
         }
         $(this).addClass('piece-selected');
 
+        document.getElementById('hidden').style.display = "block";
+
         if(this.value == "Q"){
             currentPiece = 'chartQ';
             document.getElementById('chosen-piece').innerHTML = "You have chosen the Queen !";
@@ -50,7 +52,6 @@ $(function () {
             ChangeChart('chartP');
         }
 
-        document.getElementById('hidden').style.display = "block";
         HideWho();
         HideWhen();
         DrawGraph();
