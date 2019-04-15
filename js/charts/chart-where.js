@@ -248,7 +248,13 @@ chartWhereOptions.chartQ = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-    chartWhere = Highcharts.chart('chart-where', chartWhereOptions.chartP);
+    try {
+      chartWhere = Highcharts.chart('chart-where', chartWhereOptions.chartP);
+    }
+    catch(err) {
+      alert(err.message);
+    }
+    
 });
 
 
