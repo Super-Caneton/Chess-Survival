@@ -1,7 +1,7 @@
 var chartWhere,
     chartWhereOptions = {};
 
-try{
+
 chartWhereOptions.chartP = {
     chart: {
         type: 'heatmap'
@@ -50,10 +50,6 @@ chartWhereOptions.chartP = {
         csvURL: 'https://raw.githubusercontent.com/Super-Caneton/Chess-Survival/master/data/whereP.csv'
     }
 };
-}
-catch(err){
-alert(err.message);
-}
 
 chartWhereOptions.chartR = {
     chart: {
@@ -252,23 +248,13 @@ chartWhereOptions.chartQ = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-    try {
-      chartWhere = Highcharts.chart('chart-where', chartWhereOptions.chartP);
-    }
-    catch(err) {
-      alert(err.message);
-    }
-    
+    chartWhere = Highcharts.chart('chart-where', chartWhereOptions.chartP);
 });
 
 
 function ChangeChart(ChartName){
-    try {
-      chartWhere = Highcharts.chart('chart-where', chartWhereOptions[ChartName]);
-    }
-    catch(err) {
-      alert(err.message);
-    }
+    chartWhere.destroy();
+    chartWhere = Highcharts.chart('chart-where', chartWhereOptions[ChartName]);
     $('button').removeClass('chart-selected');
     $(document.getElementById(ChartName)).addClass('chart-selected');
 }
