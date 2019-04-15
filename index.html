@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="2019 ENSAE Data Viz Project, Chess Survival - The odds of survival for the different pieces">
+<meta name="keywords" content="Chess, Survival, Statistics, Pieces, Visualisation, Blog">
+<meta name="author" content="Kevin LAM">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Chess Survival</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">Kevin LAM</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h1>Chess Survival</h1>
+                    <h4>If you were a knight on a chessboard, how long would you survive ?</h4>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Blog Section -->
+
+<section id="blog">
+     <div class="container">
+          <div class="row">
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                              <div class="blog-single-post">
+
+
+                                   <!-- Title -->
+                                   
+                                   <div class="blog-post-title">
+                                        <h2>If you were a knight on a chessboard, how long would you survive ?</a></h2>
+                                   </div>
+                                   
+                                   <div class="blog-post-format">
+                                        <span><i class="fa fa-date">April 13, 2019</i> - By Kevin LAM </span>
+                                   </div>
+
+                                   <!-- Intro -->
+                                   
+                                   <div class="blog-post-des">
+                                        <div>
+                                             <p>Well, you will not live for long... <b>24%</b>, it is the odds for survival of a knight on a typical play. It means that almost 1 knight among 4 survive a chess game. What about the other pieces ? </p>
+                                             
+                                             <p style="text-align: center; font-size: 25px; margin-top: 2cm">Average Survival Rates</p>
+                                             <table style="width:100%; margin-top: 0.5cm; margin-bottom: 2cm">
+                                                  <tr>
+                                                    <td style="font-size: 40px;">♕</td>
+                                                    <td style="font-size: 40px;">♖</td>
+                                                    <td style="font-size: 40px;">♗</td>
+                                                    <td style="font-size: 40px; color: red">♘</td>
+                                                    <td style="font-size: 40px;">♙</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Queen</td>
+                                                       <td>Rook</td>
+                                                       <td>Bishop</td>
+                                                       <td style="font-weight: bold; color: red">Knight</td>
+                                                       <td>Pawn</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>39%</td>
+                                                    <td>48%</td>
+                                                    <td>32%</td>
+                                                    <td style="font-weight: bold; color: red">24%</td>
+                                                    <td>49%</td>
+                                                  </tr>
+                                                </table> 
+                                             
+                                             <p>Beware because it's an average. For example, central pawns tend to die quickly and side pawns are rather safe.</p>
+                                        </div>
+                                   </div>
+                                   <div class="blog-post-des">
+
+                                        <!-- Part I -->
+
+                                        <h3>Why do we care about pieces survival ?</h3>
+
+                                        <p>You may wonder why do we care about the survival of our pieces ? After all, the goal is to win the game and you don't have to hesitate to sacrifice some pawns to gain advantages. As in the saying : "you can't make an omelette without breaking eggs" !</p>
+
+                                        <p>However, there is one case that this analysis may be really usefull. Do you remember the wizards' chess scene in the first Harry Potter book ?</p>
+
+                                        <div class="blog-half-block">
+                                             <div class="embed-responsive embed-responsive-16by9">
+                                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9sm_-vJNCHk" allowfullscreen></iframe>
+                                             </div>
+                                        </div>
+
+                                        <div>
+                                             <p>This topic was debated on <a href="https://www.quora.com/What-are-the-chances-of-survival-of-individual-chess-pieces-in-average-games">Quora</a> and I will quote Mac Tan  :</p>
+                                                                                
+                                             <p>"This literally was a life-and-death scenario for them [...]. So what pieces did Harry, Ron, and Hermione choose to play as?"
+                                             "Conceivably Ron could have stood on top of one of the rooks, although that doesn't look as heroic when you're throwing yourself in front of a queen for your friend to deliver a mate."
+                                             </p>
+                                        
+                                        </div>
+                                        
+                                        <div>
+                                             <p>Then I ask you :</p>
+                                             <p class="subtitle">If you were Ron, which piece would you choose and what strategy would you use to survive ?</p>
+                                        </div>
+
+                                   <div class="blog-post-des" style="margin-top: 2cm">
+                                        <h3 style="text-align: center">Please, pick a piece and let's see what happen...</h3>
+                                        <div class="centering">
+                                                  <button class="piece-selector"  value="Q">♕</button>
+                                                  <button class="piece-selector"  value="R">♖</button>
+                                                  <button class="piece-selector"  value="B">♗</button>
+                                                  <button class="piece-selector"  value="N">♘</button>
+                                                  <button class="piece-selector"  value="P">♙</button>
+                                        </div>
+
+                                        <p id="chosen-piece" style="text-align: center; font-size: 25px; margin-bottom: 1cm"></p>
+
+                                   </div>
+
+                                   <div id="hidden" style="display:none;">
+
+                                             <div class="blog-post-des">
+
+
+                                                       <!-- Part II -->
+               
+                                                       <h3>When I will die ?</h3>
+               
+                                                       <p class = "subtitle">Pawns are sacrified early-game, rooks are the last rempart !</p>
+               
+                                                       <div id = "chart-when"></div>
+                                                       
+                                                       <div class="centering">
+                                                            <button id="showallwhen">Show All</button>
+                                                       </div>
+                                                       
+                                                       <p style="margin-top: 1cm">All pieces have an increasing, then decreasing death chance over time.</p>
+
+                                                       <p id="text-when" ></p>
+                                                       
+                                                       <p>You can compare the death probability over time between piece by clicking on <b>show all</b>. You will notice that Pawns die firts, then knights, bishops, queens and finally rooks are the last rempart.</p>
+
+                                                  </div>
+                                                  <div class="blog-post-des">
+               
+                                                       <!-- Part III -->
+               
+                                                       <h3>Where I will die ?</h3>
+                                                       
+                                                       <p class = "subtitle">The center is a real bloodbath : chess is the real battle for Middle-Earth !</p>
+               
+                                                       <div id = "chart-where" style="height: 500px; width: 600px; margin: auto auto" ></div>
+               
+                                                       <div class="centering">
+                                                            <button id="chartQ" class="chart-update"  onclick="ChangeChart('chartQ')">♕</button>
+                                                            <button id="chartR" class="chart-update"  onclick="ChangeChart('chartR')">♖</button>
+                                                            <button id="chartB" class="chart-update"  onclick="ChangeChart('chartB')">♗</button>
+                                                            <button id="chartN" class="chart-update"  onclick="ChangeChart('chartN')">♘</button>
+                                                            <button id="chartP" class="chart-update chart-selected"  onclick="ChangeChart('chartP')">♙</button>
+                                                       </div>
+               
+                                                       <div style="margin-top: 1cm">
+                                                            <p id="text-where"></p>
+
+                                                            <p>We can see that at the center, every pieces have a high risk to die. That's because in Chess, the occupation of the center is really important : controlling the center gives you a big tactical advantage. You unlock the potential of your pieces while hindering the movements of your oppenent. It explain why players send troops to the center to keep control of the area. And as expected, it will cause a lot of casualties. If I have an advice for you dear fellow chess pieces : <b>Avoid the center at all cost, or you will be killed ! </b></p>
+                                                       </div>
+               
+                                                  </div>
+                                                  <div class="blog-post-des">
+                                                       
+                                                       <!-- Part IV -->
+                                                       
+                                                       <h3>Who will kill me?</h3>
+               
+                                                       <p class = "subtitle">What is my diet ?</p>
+                                                       
+                                                       <div id= "chart-whoBar"></div>
+                                                       
+                                                       <p id="text-whoBar" style="margin-top: 1cm"></p>
+
+                                                       <p>What about the other pieces ?</p>
+
+                                                  </div>
+                                                  <div class="blog-post-des">
+                                                       
+                                                       <p class = "subtitle">Pieces are mostly cannibal !</p>
+                                                            
+                                                            <div id= "chart-whoBar2"></div>
+                                                            <div class="centering" style="margin-bottom: 0.5cm">
+                                                                 <button id="showcannibals" style="width: 6cm" onclick=" ShowCannibals(0)">Show me the cannibals !</button>
+                                                            </div>
+                                                            
+                                                            <p>By clicking on <b>Show me the cannibals !</b> you can see that for each piece, they have the biggest proportion of themselves in their diet. Except for the Knight. Then, I advice you to <b>avoid your nemesis on the battlefield !</b> You could eat them, but you can also be eaten by them.</p>
+                                                            <p>Let's put all this data in a more convinient way to see.</p>
+
+                                                  </div>
+               
+                                                  <div class="blog-post-des">
+               
+                                                       <p class = "subtitle">Who is the prey ? Who is the predator ?</p>
+                                                       
+                                                       <p>Let me introduce you : The Chess <i>food chain</i> :</p>
+               
+                                                       <div id = "chart-whoNetwork" style="height: 500px; margin: auto auto; border:1px solid black" ></div>
+                                                            
+                                                       <p><font color='#FF0800'>Kings ♔</font> and <font color='#FF0800'>Queens ♕</font> are the super-predator in this food chain as expected. Because <font color='#FF0800'>Kings ♔</font> can't be captured, and <font color='#FF0800'>Queens ♕</font> are the most powerfull pieces of the game.</p>
+
+                                                       <p><font color='#FFBF00'>Rooks ♖</font>, <font color='#FFBF00'>Bishops ♗</font> and <font color='#FFBF00'>Knights ♘</font> are the middle-class predator. They are both preys and predators. It is interesting to note that <font color='#FFBF00'>Bishops ♗</font> and <font color='#FFBF00'>Knights ♘</font> have a special relationship : they tend to eat each other as well. <font color='#FFBF00'>Rooks ♖</font> are a special case mostly because they are used late-game.</p>
+
+                                                       <p>We see that <font color='#0064C7'>Pawns ♙</font> are at the bottom of the food chain. For every pieces, <font color='#0064C7'>Pawns ♙</font> are the main component of their diet. They are resilient (I remind you that the odds of survival of a <font color='#0064C7'>Pawns ♙</font> is the highest among the pieces) because they are numerous.</p>
+
+                                                       <p id="text-whoNetwork" style="margin-top: 1cm"></p>
+                                                            
+                                                  </div>
+               
+               
+                                                  <div class="blog-post-des">
+               
+                                                       <h3>In conclusion</h3>
+               
+
+                                                       <p><b>If the game have just started</b>, take the <b>Rook</b> and hope for an quick mate. Because their death probability spike arrive later in the game.</p>
+                                                       <p><b>If you arrive mid-game, as Ron in the film</b>, take the <b>Knight</b> or the <b>Bishop</b>. It may seems counter-intuitive, but if a Knight manage to survive the early-game, then, it has lesser chance to die later, all things equals otherwise.</p>
+                                                       <p>As a rule of thumb : <b>Avoid the center !!!</b> I am serious, you might not win the game, but you will stay alive !</p>
+                                                       <p>Also, <b>avoid to face foes that love to eat your piece type</b>. So if you are a Pawn, just stay hidden for the whole game because everyone can kill you easly.</p>
+
+                                                  </div>
+                                                  <div class="blog-post-des">
+                                                       <div>
+                                                            <p>We have seen that Pawns are the true victims. What happen if we give them some weapons to defend themselves ?</p>
+                                                            <button onclick="document.getElementById('end').style.display = 'block'">Show me !</button>
+                                                       </div>
+                                                       
+                                                       <div id="end" class="blog-half-block"  style="display:none;">
+                                                            <p class="subtitle centering">Knights would be slaughtered again...</p>
+                                                            <a href= "https://xkcd.com/1078/"><img class="blog-post-image" src="images/knights.png" alt="Knights" title="1. Nf3 ... ↘↘↘  2. Nc3 ... ↘↘↘  0-1"></a>
+                                                       </div>
+                                                  </div>
+                                   </div>
+
+
+                              </div>
+                    </div>
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>About this project</h3>
+                    <p>This project is part of a class assignement in Data Story Telling for the <a href="https://www.ensae.fr/">ENSAE ParisTech</a></p>
+                    <p>The data come from the <a href="https://www.ficsgames.org/download.html">FICS database</a>, plays are standard game with average rating > 2000 between 2015 and 2018</p>
+                    <p>Refined data is available at <a href="https://github.com/Super-Caneton/Chess-Survival/tree/master/data">my Github repository</a></p>
+                    <p>Website Template : 2085 Neuron made by <a href="http://www.tooplate.com/view/2085-neuron">Tooplate</a></p>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Contact Me</h3>
+                    <p><i class="fa fa-save"></i> kevin.lam@ensae.fr</p>
+               </div>            
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/selection.js"></script>
+
+<!--CHARTS SCRIPTS-->
+
+<script src="js/charts/highcharts.js"></script>
+<script src="js/charts/highcharts-more.js"></script>
+<script src="js/charts/exporting.js"></script>
+<script src="js/charts/data.js"></script>
+<script src="js/charts/heatmap.js"></script>
+<script src="js/charts/d3.v3.min.js"></script>
+<script src="js/charts/jsnetworkx.js"></script>
+
+<script src="js/charts/chart-when.js"></script>
+<script src="js/charts/chart-where.js"></script>
+<script src="js/charts/chart-whoBar.js"></script>
+<script src="js/charts/chart-whoNetwork.js"></script>
+
+
+</body>
+</html>
