@@ -259,7 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function ChangeChart(ChartName){
-    chartWhere.destroy();
     chartWhere = Highcharts.chart('chart-where', chartWhereOptions[ChartName]);
     $('button').removeClass('chart-selected');
     $(document.getElementById(ChartName)).addClass('chart-selected');
