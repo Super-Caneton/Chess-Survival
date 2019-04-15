@@ -259,7 +259,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function ChangeChart(ChartName){
-    chartWhere = Highcharts.chart('chart-where', chartWhereOptions[ChartName]);
+    try {
+      chartWhere = Highcharts.chart('chart-where', chartWhereOptions[ChartName]);
+    }
+    catch(err) {
+      alert(err.message);
+    }
     $('button').removeClass('chart-selected');
     $(document.getElementById(ChartName)).addClass('chart-selected');
 }
